@@ -43,7 +43,8 @@ body {
 .row {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .old-price {
@@ -52,6 +53,15 @@ body {
 
 .actual-price {
   color: red;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.display-none {
+  display: none;
 }
 
 /* HEADER */
@@ -63,10 +73,13 @@ body {
 
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .header-gender li {
   display: inline-block;
+  padding: 5px;
+  font-weight: bold;
 }
 
 .header-logo {
@@ -78,14 +91,20 @@ body {
   height: 1.5rem;
 }
 
+.header-icon i {
+  padding: 0 5px;
+}
+
 /* MAIN */
 
 main .container {
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .card {
-  width: calc(100% / 3);
+  width: 33%;
+  padding: 20px 10px;
 }
 
 /* MAIN TOP CARD  */
@@ -146,10 +165,37 @@ main .container {
 }
 
 .model {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .brand {
   font-weight: 100;
+}
+
+/* FOOTER */
+
+.page-footer {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.page-footer > .container {
+  padding: 30px 10px;
+}
+
+.element-info li {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.element-social > span {
+  display: block;
+}
+
+.element-social > i {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
 }
