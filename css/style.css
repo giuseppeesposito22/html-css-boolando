@@ -43,6 +43,7 @@ body {
 .row {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 /* HEADER */
@@ -67,4 +68,66 @@ body {
 
 .header-logo > img {
   height: 1.5rem;
+}
+
+/* MAIN */
+
+main .container {
+  padding-top: 2rem;
+}
+
+.card {
+  width: calc(100% / 3);
+}
+
+/* MAIN TOP CARD  */
+
+.top-card {
+  position: relative;
+}
+
+.element-label {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+}
+
+.label {
+  padding: 2px 8px;
+  color: white;
+  z-index: 1;
+}
+
+.label.discount {
+  background-color: red;
+}
+
+.label.sustainability {
+  background-color: green;
+}
+
+.heart {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+
+  background-color: white;
+  width: fit-content;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card:hover .hover {
+  display: block;
 }
