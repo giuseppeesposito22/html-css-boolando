@@ -18,6 +18,10 @@ ul {
   list-style-type: none;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* UTILS */
 
 .debug,
@@ -34,4 +38,33 @@ ul {
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+/* HEADER */
+
+.page-header {
+  background-color: #ff6900;
+  color: white;
+  padding: 1rem 0;
+
+  position: sticky;
+  top: 0;
+}
+
+.header-gender li {
+  display: inline-block;
+}
+
+.header-logo {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header-logo > img {
+  height: 1.5rem;
 }
