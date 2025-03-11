@@ -46,6 +46,14 @@ body {
   gap: 1rem;
 }
 
+.old-price {
+  text-decoration: line-through;
+}
+
+.actual-price {
+  color: red;
+}
+
 /* HEADER */
 
 .page-header {
@@ -130,4 +138,18 @@ main .container {
 
 .card:hover .hover {
   display: block;
+}
+
+.brand,
+.model {
+  display: block;
+}
+
+.model {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.brand {
+  font-weight: 100;
 }
