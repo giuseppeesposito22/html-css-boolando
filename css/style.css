@@ -172,6 +172,10 @@ main .container {
   font-weight: 100;
 }
 
+.heart:hover {
+  color: red;
+}
+
 /* FOOTER */
 
 .page-footer {
